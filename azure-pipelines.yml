@@ -53,7 +53,7 @@ stages:
     displayName: Deploy
     pool:
       vmImage: $(vmImageName)
-    environment: 'XI2312senthilrajazurevotingappredis.redeyev1'
+    environment: 'votingenv'
     strategy:
       runOnce:
         deploy:
