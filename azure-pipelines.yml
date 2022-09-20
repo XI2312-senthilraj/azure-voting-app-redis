@@ -16,7 +16,7 @@ variables:
   containerRegistry: 'redeyecontainerregistry.azurecr.io'
   dockerfilePath: '**/Dockerfile'
   tag: '$(Build.BuildId)'
-  imagePullSecret: 'acrserviceconn'
+  imagePullSecret: 'f5fac502-55d9-4784-9b4a-bf0b573cc4ab'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
