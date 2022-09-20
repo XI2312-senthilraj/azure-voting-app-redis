@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: votingappksr 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: votingappksr
+  template:
+    metadata:
+      labels:
+        app: votingappksr 
+    spec:
+      containers:
+        - name: votingappksr 
+          image: redeyecontainerregistry.azurecr.io/votingappksr
+          ports:
+          - containerPort: 80
